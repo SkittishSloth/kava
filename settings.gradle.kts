@@ -1,3 +1,7 @@
 rootProject.name = "kava"
 
-include("event-bus", "tty")
+include(
+  "event-bus", 
+  "tty",
+  "tty-driver"
+)

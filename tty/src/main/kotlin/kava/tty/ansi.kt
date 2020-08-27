@@ -1,8 +1,24 @@
 package kava.tty
 
-const val ESC = 27.toChar()
-const val CSI = ESC + "["
+val ESC = 27.toChar()
+val CSI = ESC + "["
+
+data class Coordinates(
+  val row: Int,
+  val column: Int
+)
 
 class Ansi {
   
+  fun csi(contents: String): String =
+    CSI + contents
+  
+  fun saveCursor() {
+    val 
+  }
+  
+  fun dimensions(): Coordinates {
+    val moveTo = csi("999;999H")
+    TODO()
+  }
 }
